@@ -1,0 +1,72 @@
+*foreground:        #dad5b9
+*background:        #0D363F
+*.foreground:       #dad5b9
+*.background:       #0D363F
+URxvt*foreground:   #2ca1db
+URxvt*background:   [90]#0D363F
+URxvt*cursorColor:  #dad5b9
+URxvt*borderColor: [90]#0D363F
+
+
+*.color0: #0D363F
+*color0:  #0D363F
+*.color1: #112047
+*color1:  #9FA073
+*.color2: #AFAA78
+!the location colour
+*color2:  #f44323
+*.color3: #D1BD7B
+*color3:  #D1BD7B
+*.color4: #13788B
+*color4:  #13788B
+*.color5: #199BB2
+*color5:  #199BB2
+*.color6: #59A9A7
+*color6:  #59A9A7
+*.color7: #dad5b9
+*color7:  #dad5b9
+*.color8: #989581
+*color8:  #989581
+*.color9: #9FA073
+*color9:  #9FA073
+*.color10: #AFAA78
+*color10:  #AFAA78
+*.color11: #D1BD7B
+*color11:  #D1BD7B
+*.color12: #13788B
+*color12:  #13788B
+*.color13: #199BB2
+*color13:  #199BB2
+*.color14: #59A9A7
+*color14:  #59A9A7
+*.color15: #dad5b9
+*color15:  #dad5b9
+
+*.color66: #0D363F
+*color66: #0D363F
+
+!*foreground:            #DD8D29
+!*foreground_bold:       #E2D200
+!*cursor:                #46ACC8
+!*background:            #E58601
+
+!"#DD8D29", "#E2D200", "#46ACC8", "#E58601", "#B40F20"
+
+URxvt.font:		xft:monospace:size=16
+URxvt.scrollBar:	false
+URxvt.intensityStyles:	false
+URxvt.background:	[80]#000000
+URxvt.cursorColor:	white
+URxvt.depth:		32
+URxvt.colorUL:		#4682B4
+URxvt.perl-ext-common:	default, matcher, resize-font
+
+# URL-Select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url.select.launcher: webview
+URxvt.url.select.underline: true
+# Keyboard-Select
+URxvt.keysym.M-Escape:	perl:keyboard-select:activate
+# Resize font
+URxvt.keysym.C-down:	resize-font:smaller
+URxvt.keysym.C-up:	resize-font:bigger
