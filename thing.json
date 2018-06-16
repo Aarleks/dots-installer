@@ -9,12 +9,12 @@
        "x": 0,
        "y": 0
     },
-    "name": "alex@WaWeb: ~",
+    "name": "aarleks@Arch:~",
     "percent": 0.5,
     "swallows": [
        {
-        "class": "^st-256color$",
-        "instance": "^st-256color$",
+        "class": "^URxvt$",
+        "instance": "^urxvt$",
         "transient_for": "^$"
        }
     ],
@@ -39,12 +39,12 @@
                "x": 0,
                "y": 0
             },
-            "name": "alex@WaWeb: ~",
+            "name": "aarleks@Arch:~",
             "percent": 0.6,
             "swallows": [
                {
-                "class": "^st-256color$",
-                "instance": "^st-256color$",
+                "class": "^URxvt$",
+                "instance": "^urxvt$",
                 "transient_for": "^$"
                }
             ],
@@ -60,12 +60,12 @@
                "x": 0,
                "y": 0
             },
-            "name": "alex@WaWeb: ~/.config/i3",
+            "name": "aarleks@Arch:~",
             "percent": 0.4,
             "swallows": [
                {
-                "class": "^st-256color$",
-                "instance": "^st-256color$",
+                "class": "^URxvt$",
+                "instance": "^urxvt$",
                 "transient_for": "^$"
                }
             ],
