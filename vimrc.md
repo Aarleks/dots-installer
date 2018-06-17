@@ -1,6 +1,15 @@
 ---
 title: An Attempt at a Literate Vimrc File
 author: Alex Norman
+date: '2018-06-19'
+slug: a-literate-vimrc-file
+categories:
+tags:
+  - Vim
+  - literate programming
+  - plain text writing
+summary: In which, for no good reason, I make my .vimrc file into a markdown-based blogpost that Vim reads upon startup.
+draft: true
 ---
 
 Reading code can be an esoteric exercise. One usually needs to determine whether the code works according to the rules of the language, what the particular functions and commands mean, and what the results of of the code will be. In addition to this, human readers (as opposed to the machines that actually execute the code) often like to be able to understand the choices made by the author. Why were certain functions invoked and not others? Why are certain objects being created? And so on. The obvious solution to this is comments; lines of code that are part of the file but not read by the machine. But comments are usually better short, as the formatting required to 'comment out' text in a file makes it less readable. For example:
@@ -39,7 +48,21 @@ set splitright
 
 ## Keymappings for Profit Collection
 
-jumbo g
+File navigation is one of the greatest things about Vim. It's easy to go to the exact character (row + column) you want in just a couple of keystrokes. There are some improvements to be made, however, to make navigation even easier.
+
+Firstly, navigation between split windows. The default keymapping to go to the split to the right is `<C-w>l`. Too many keystrokes - let's get rid of the `w`.
+
+```vim
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+```
+This is a handy one - replace all while in Normal Mode with minimal effort! Simply add the search text between the slashes and the replacement text in place of the `g`.
+
+```vim
+nnoremap S :%s//g<Left><Left>
+```
 
 ### Filetype Specific Mappings
 
