@@ -24,7 +24,9 @@ I first learned that config files had the potential to be written in a 'literate
 
 ### My .Vimrc
 
-Many of the settings and mappings in my `.vimrc` are lifted directly from [Luke Smith's .vimrc](https://github.com/LukeSmithxyz/voidrice/blob/master/.vimrc).
+Many of the settings and mappings in my `.vimrc` are lifted directly from [Luke Smith's .vimrc](https://github.com/LukeSmithxyz/voidrice/blob/master/.vimrc). Luke's focus on keymappings for writing academic literature are informative and helpful. Check out his [YouTube channel](https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA).
+
+
 
 ## General Settings and Startup
 
