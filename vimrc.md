@@ -20,9 +20,13 @@ The quotation mark at the start of the line tell the machine not to read the lin
 
 An alternative is the combination of prose and code known as literate programming, which makes for a document that it easy to read and able to discuss coding choices at length, as well as being machine readable. Literate programming is great for researchers, giving them the capacity to weave programmatic and theoretical thinking together on a single page. But it also makes a document like a config file a much more useful than a series of commands for a program to execute. Instead it becomes didactic in nature.
 
-I first learned that config files had the potential to be written in a 'literate' matter when learning Emcas. I really like the way you can write a config file for Emacs in Org-mode. While literate programming [isn't right in many situations](https://harryrschwartz.com/2016/05/19/when-is-literate-programming-appropriate.html) programming situations (most?), it is for any that is meant to teach someone something.
+I first learned that config files had the potential to be written in a 'literate' matter when learning Emcas. I really like the way you can write a config file for Emacs in Org-mode. In fact, to see what that looks like, check out [Harry Schwartz's talk](https://www.youtube.com/watch?v=SzA2YODtgK4) for Thoughtbot about using Org-mode for... well, everything. In the video, Schwartz talks about how useful it is to have a didactic config file. While literate programming [isn't right in many situations](https://harryrschwartz.com/2016/05/19/when-is-literate-programming-appropriate.html) programming situations (most?), it is for any that is meant to teach someone something.
 
-### My .Vimrc
+### A Literate .Vimrc
+
+After watching Schwartz's talk about Emacs Org-mode I stopped using Vim for about a week and played with Emacs. It's great, but even though it was a lot closer to what I was used to using for some reason Vim just keeps pulling me back. What I wanted was a .vimrc that I could writer literately and display on my blog as part of a programme to teach Master's and PhD students about the virues of plain text writing and version control. I thought nothing of the sort existed for Vim, but (of course) a simple Google yielded Tyler Cipriani's Wi[blog post](https://tylercipriani.com/blog/2017/06/14/literate-vimrc/) post announcing his Vim plugin, [`Literate-vimrc1`](https://github.com/thcipriani/literate-vimrc). This plugin essentially does what Org-mode allows you to do within Vim: write a document - in Markdown in this case - that Vim will read for configuration.
+
+# My .Vimrc
 
 Many of the settings and mappings in my `.vimrc` are lifted directly from [Luke Smith's .vimrc](https://github.com/LukeSmithxyz/voidrice/blob/master/.vimrc). Luke's focus on keymappings for writing academic literature are informative and helpful. Check out his [YouTube channel](https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA).
 
