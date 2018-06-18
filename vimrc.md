@@ -24,11 +24,11 @@ I first learned that config files had the potential to be written in a 'literate
 
 ### A Literate .Vimrc
 
-After watching Schwartz's talk about Emacs Org-mode I stopped using Vim for about a week and played with Emacs. It's great, but even though it was a lot closer to what I was used to using for some reason Vim just keeps pulling me back. What I wanted was a .vimrc that I could writer literately and display on my blog as part of a programme to teach Master's and PhD students about the virues of plain text writing and version control. I thought nothing of the sort existed for Vim, but (of course) a simple Google yielded Tyler Cipriani's Wi[blog post](https://tylercipriani.com/blog/2017/06/14/literate-vimrc/) post announcing his Vim plugin, [`Literate-vimrc1`](https://github.com/thcipriani/literate-vimrc). This plugin essentially does what Org-mode allows you to do within Vim: write a document - in Markdown in this case - that Vim will read for configuration.
+After watching Schwartz's talk about Emacs Org-mode I stopped using Vim for about a week and played with Emacs. It's great, but even though it was a lot closer to what I was used to using for some reason Vim just keeps pulling me back. What I wanted was a .vimrc that I could writer literately and display on my blog as part of a programme to teach Master's and PhD students about the virues of plain text writing and version control. I thought nothing of the sort existed for Vim, but (of course) a simple Google yielded Tyler Cipriani's Wi[blog post](https://tylercipriani.com/blog/2017/06/14/literate-vimrc/) post announcing his Vim plugin, [`Literate-vimrc`](https://github.com/thcipriani/literate-vimrc). This plugin essentially does what Org-mode allows you to do within Vim: write a document - in Markdown in this case - that Vim will read for configuration.
 
 # My .Vimrc
 
-Many of the settings and mappings in my `.vimrc` are lifted directly from [Luke Smith's .vimrc](https://github.com/LukeSmithxyz/voidrice/blob/master/.vimrc). Luke's focus on keymappings for writing academic literature are informative and helpful. Check out his [YouTube channel](https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA).
+The bulk of my work in Vim is writing prose, mainly academic articles and blogposts. I've set Vim up for that main purpose, but there are a few tweaks for working in R, Python, and Shell. Many, indeed most, of the settings and mappings in my `.vimrc` are lifted directly from [Luke Smith's .vimrc](https://github.com/LukeSmithxyz/voidrice/blob/master/.vimrc). Luke's focus on keymappings for writing academic literature are informative and helpful. Check out his [YouTube channel](https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA).
 
 
 
