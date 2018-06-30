@@ -76,20 +76,41 @@ nnoremap S :%s//g<Left><Left>
 
 #### Spell-check
 
-Spell-check set to F6
+Spell-check set to F6 and the British English library.
 ```vim
 map <F6> :setlocal spell! spelllang=en_gb<CR>
 ```
-#### Open the.bib file
+#### Word count
+
+Get line, word and character counts with F3.
+```vim
+map <F3> :!wc <C-R>%<CR>
+```
+
+#### Open my .bib file
 
 Open my bibliography file in split
 ```vim
 map <F9> :vsp<space>~/Dropbox/WritingTools/zotero-library.bib<CR>
 ```
 
+#### Open URLs in a file
+
+Use the `urlview` script to choose and open a url.
+```vim
+:noremap <leader>u :w<Home>silent <End> !urlview<CR>
+```
+
+#### Compile to .pdf
+
+This command executes the script `compiler` that is adapted from Luke Smith's file of the same name, and that ships with his LARBS setup. The script builds a pdf with default settings using `pandoc`.
+```vim
+map <leader>c :!compiler <c-r>%<CR>
+```
+
 ## Filetype Specific Mappings
 
-I usually write in Markdown or RMarkdown for blog posts and articles/chapters/etc., so first we'll setup Vim to interpret relevant files as .markdown.
+I usually write in Markdown or RMarkdown for blog posts and articles/chapters/etc., so first we'll setup Vim to interpret relevant files as .markdown. This command tells Vim to interpret a bunch of different filetypes as Markdown files, which makes navigation and keymappings work the same way.
 
 ```vim
 let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
