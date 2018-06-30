@@ -26,7 +26,7 @@ I first learned that config files had the potential to be written in a 'literate
 
 ### A Literate .Vimrc
 
-I seem to be a [Vim](https://www.vim.org/) user for both programming and writing prose. I've disliked using Microsoft's Word program since having to write my PhD in it (many crashes, much lost work despite backups). Over the last two years I have gradually migrated from Word to [SublimeText](https://www.sublimetext.com/) to [Atom](https://atom.io/) and finally to Vim. After watching Harry Schwartz's talk about Emacs Org-mode I stopped using Vim for about a week and played with [Emacs](https://www.gnu.org/software/emacs/). It's great, but even though I really liked it and found it was closer to what I was used to using in Atom or SublimeText, for some reason Vim just kept pulling me back. But - and this will seem silly - I found the config file for Vim (the `.vimrc` file) was... well, boring. After seeing the Emacs Org-mode config I wanted something like that. This meant I effectively needed a .vimrc that I could write literately, which would have the advantage of being able to be displayed on my blog, and used as part of a programme to teach Master's and PhD students about the virues of plain text writing and version control. I suspected nothing of the sort existed for Vim. Of course, a simple Google yielded Tyler Cipriani's Wi[blog post](https://tylercipriani.com/blog/2017/06/14/literate-vimrc/) post announcing his Vim plugin, [`Literate-vimrc`](https://github.com/thcipriani/literate-vimrc). This plugin essentially does what Org-mode allows you to do within Vim: write a document - in [Markdown](https://daringfireball.net/projects/markdown/) in this case - that Vim will read for configuration.
+I seem to be a [Vim](https://www.vim.org/) user for both programming and writing prose. I've disliked using Microsoft's Word program since having to write my PhD in it (many crashes, much lost work despite backups). Over the last two years I have gradually migrated from Word to [SublimeText](https://www.sublimetext.com/) to [Atom](https://atom.io/) and finally to Vim. After watching Harry Schwartz's talk about Emacs Org-mode I stopped using Vim for about a week and played with [Emacs](https://www.gnu.org/software/emacs/). It's great, but even though I really liked it and found it was closer to what I was used to using in Atom or SublimeText, for some reason Vim just kept pulling me back. But - and this will seem silly - I found the config file for Vim (the `.vimrc` file) was... well, boring. After seeing the Emacs Org-mode config I wanted something like that. This meant I effectively needed a .vimrc that I could write literately, which would have the advantage of being able to be displayed on my blog, and used as part of a programme to teach Master's and PhD students about the virues of plain text writing and version control. I suspected nothing of the sort existed for Vim. Of course, a simple Google yielded Tyler Cipriani's [blog post](https://tylercipriani.com/blog/2017/06/14/literate-vimrc/) post announcing his Vim plugin, [`Literate-vimrc`](https://github.com/thcipriani/literate-vimrc). This plugin essentially does what Org-mode allows you to do within Vim: write a document - in [Markdown](https://daringfireball.net/projects/markdown/) in this case - that Vim will read for configuration.
 
 # My .Vimrc
 
@@ -66,12 +66,33 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 ```
-This is a handy one - replace all while in Normal Mode with minimal effort! Simply add the search text between the slashes and the replacement text in place of the `g`.
 
+#### Replace All
+
+This is a handy one - replace all while in Normal Mode with minimal effort! Simply add the search text between the slashes and the replacement text in place of the `g`.
 ```vim
 nnoremap S :%s//g<Left><Left>
 ```
 
-### Filetype Specific Mappings
+#### Spell-check
 
-jumbo g fiif
+Spell-check set to F6
+```vim
+map <F6> :setlocal spell! spelllang=en_gb<CR>
+```
+#### Open the.bib file
+
+Open my bibliography file in split
+```vim
+map <F9> :vsp<space>~/Dropbox/WritingTools/zotero-library.bib<CR>
+```
+
+## Filetype Specific Mappings
+
+I usually write in Markdown or RMarkdown for blog posts and articles/chapters/etc., so first we'll setup Vim to interpret relevant files as .markdown.
+
+```vim
+let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+```
+
+
