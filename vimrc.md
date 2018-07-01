@@ -11,7 +11,13 @@ tags:
   - literate programming
   - plain text writing
 summary: In which, for no good reason, I make my .vimrc file into a markdown-based blogpost that Vim reads upon startup.
+output:
+  blogdown::htmlpage:
+    toc: true
+    number_sections: true
+    toc_depth: 3
 draft: true
+
 ---
 
 Reading code can be an esoteric exercise. One usually needs to determine whether the code works according to the rules of the language, what the particular functions and commands mean, and what the results of of the code will be. In addition to this, human readers (as opposed to the machines that actually execute the code) often like to be able to understand the choices made by the author. Why were certain functions invoked and not others? Why are certain objects being created? And so on. The obvious solution to this is comments; lines of code that are part of the file but not read by the machine. But comments are usually better short, as the formatting required to 'comment out' text in a file makes it less readable. For example:
@@ -53,6 +59,47 @@ set linebreak
 set splitbelow
 set splitright
 ```
+
+The following are also pretty handy.
+
+####  Autocompletion
+```vim
+set wildmode=longest,list,full
+set wildmenu
+```
+
+#### Delete trailing whitespace
+```vim
+autocmd BufWritePre * %s/\s\+$//e
+```
+
+#### Renew Bash and Ranger configs
+
+When system shortcut files are updated, renew bash and ranger configs with new material.
+```vim
+autocmd BufWritePost ~/.scripts/folders,~/.scripts/configs !bash ~/.scripts/shortcuts.sh
+```
+
+#### Disable Auto-commenting
+
+By default, Vim comments out new lines. This command stops that.
+```vim
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+```
+
+#### NAvigation with guides
+
+This took me *ages* to figure out. I ekpt seeing `<++>` in a some files and couldn't figure out what they were for. Yet again, Luke Smith's guidance helped. They are just markers one can leave in order to indicate `put some text here`. Handy!
+
+These commands allow you to jump to the next 'guide', delete it, and throw you into `Insert` mode.
+
+```vim
+inoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
+vnoremap <Space><Tab> <Esc>/<++><Enter>"_c4l
+map <Space><Tab> <Esc>/<++><Enter>"_c4l
+inoremap ;gui <++>
+```
+
 
 ## Keymappings for Profit Collection
 
@@ -128,4 +175,34 @@ I usually write in Markdown or RMarkdown for blog posts and articles/chapters/et
 let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 ```
 
+### Markdown Magic from Unicorns
+
+Almost all of my Vim work is in Markdown. These keymappings make life a little easier. First of all there is navigation with `j` and `k` when in `Normal` mode so that you can more intuitively go through the lines of a paragraph, rather than logical lines. Secondly, there are a bunch of shortcuts to create things like **bold**, *italics*, ~~strikethrough~~, `code chunks` (including blocks for R and Python), new sections, horizontal lines, web links, image links, and four levels of headings.
+
+```vim
+autocmd Filetype markdown,rmd map j gj
+autocmd Filetype markdown,rmd map k gk
+autocmd Filetype markdown,rmd map <leader>w yiWi[<esc>Ea](<esc>pa)
+autocmd Filetype markdown,rmd inoremap ;n ---<Enter><Enter>
+autocmd Filetype markdown,rmd inoremap ;b ****<++><Esc>F*hi
+autocmd Filetype markdown,rmd inoremap ;s ~~~~<++><Esc>F~hi
+autocmd Filetype markdown,rmd inoremap ;e **<++><Esc>F*i
+autocmd Filetype markdown,rmd inoremap ;c ``<++><Esc>F`i
+autocmd Filetype markdown,rmd inoremap ;h ====<Space><++><Esc>F=hi
+autocmd Filetype markdown,rmd inoremap ;i ![](<++>)<++><Esc>F[a
+autocmd Filetype markdown,rmd inoremap ;a [](<++>)<++><Esc>F[a
+autocmd Filetype markdown,rmd inoremap ;1 #<Space><Enter><++><Esc>kA
+autocmd Filetype markdown,rmd inoremap ;2 ##<Space><Enter><++><Esc>kA
+autocmd Filetype markdown,rmd inoremap ;3 ###<Space><Enter><++><Esc>kA
+autocmd Filetype markdown,rmd inoremap ;4 ####<Space><Enter><++><Esc>kA
+autocmd Filetype markdown,rmd inoremap ;l --------<Enter>
+autocmd Filetype rmd inoremap ;r ```{r}<CR>```<CR><CR><esc>2kO
+autocmd Filetype rmd inoremap ;p ```{python}<CR>```<CR><CR><esc>2kO
+```
+
+These two commands map `F5` to a command to create a pdf, in `Markdown` via pandoc, and in RMarkdown via R.
+```vim
+autocmd Filetype markdown map <F5> :!pandoc<space><C-r>%<space>--pdf-engine=xelatex<space>-o<space><C-r>%.pdf<Enter><Enter>
+autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+```
 
