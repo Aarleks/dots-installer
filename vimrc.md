@@ -108,6 +108,18 @@ This command executes the script `compiler` that is adapted from Luke Smith's fi
 map <leader>c :!compiler <c-r>%<CR>
 ```
 
+#### Distraction-free Writing
+
+Whether writing code or prose, it's often nice to have a clean writing environment. In fact, one of the nicest things about moving away from a program like Word is being able to customise your writing environment so it's clean and aesthetically pleasing to you. For me, this means the text I'm working on and nothing else. Usually, this is known as 'distraction-free writing'.
+
+I use Goyo for this purpose in Vim. The following command maps `F10` to be a Goyo toggle. I may also put Limelight in here, too, as it seems pretty cool.
+
+```vim
+map <F10> :Goyo<CR>
+map <leader>f :Goyo<CR>
+inoremap <F10> <esc>:Goyo<CR>a
+```
+
 ## Filetype Specific Mappings
 
 I usually write in Markdown or RMarkdown for blog posts and articles/chapters/etc., so first we'll setup Vim to interpret relevant files as .markdown. This command tells Vim to interpret a bunch of different filetypes as Markdown files, which makes navigation and keymappings work the same way.
