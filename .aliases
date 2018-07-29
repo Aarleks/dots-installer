@@ -1,1 +1,21 @@
+#!/usr/bin/env bash
+
 # This be me file for alises that make me smile.
+
+# Shortcuts for vertical folder navigation.
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ~="cd ~"
+
+# Shortcuts direct to key folders.
+alias db="cd ~/Dropbox"
+alias wr="cd ~/Dropbox/WritingProjects"
+alias mres="cd ~/Dropbox/MRes/mres\ shared\ folder/\#\ UNITS"
+alias v="vim"
+
+alias l="ls -al"
+
+# Print each PATH on a new line for ease of reading.
+alias path="echo -e ${PATH//:/\\n}"
+
