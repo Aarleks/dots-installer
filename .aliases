@@ -12,10 +12,14 @@ alias ~="cd ~"
 alias db="cd ~/Dropbox"
 alias wr="cd ~/Dropbox/WritingProjects"
 alias mres="cd ~/Dropbox/MRes/mres\ shared\ folder/\#\ UNITS"
-alias v="vim"
 
+# Shortcuts to programs or functions of interest.
+alias v="vim"
 alias l="ls -al"
 
 # Print each PATH on a new line for ease of reading.
 alias path="echo -e ${PATH//:/\\n}"
 
+# Shortcuts for particular files of interest.
+alias cfv="vim ~/Dropbox/Website/dralexnorman/content/post/2018-07-07-a-literate-vimrc.md" # .vimrc
+alias cfa="vim ~/.dotfiles/.aliases" # bash aliases
