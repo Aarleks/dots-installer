@@ -1,0 +1,19 @@
+Command,Name in repo or the git url,Explanation of purpose
+,base-devel,is a package for developers
+,git,is software for version control
+,i3-gaps,is a tiling windows manager
+A,yay,is my AUR Helper to install from the AUR
+,xorg-server,is the graphical server for windows managers
+,xorg-xdpyinfo,gets screen information for certain instances
+,xorg-xinit,starts the graphical server
+G,https://github.com/lukesmithxyz/st.git,is Luke Smith's build of suckless's terminal emulator
+,rofi,is the system's main application launcher
+,ranger,is a terminal-based file manager
+,arandr,is a user interface for managing screens
+,compton,gives the capacity to do pretty transparency tricks with tiles
+,cronie,cron for Arch scheduling
+,dosfstools,enables access of dos-like file systems
+,dunst,is a notification system
+,exfat-utils,enables access of FAT file systems
+,firefox,for interwebbing
+
