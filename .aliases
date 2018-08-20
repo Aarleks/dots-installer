@@ -24,3 +24,4 @@ alias path="echo -e ${PATH//:/\\n}"
 # Shortcuts for dotfiles of interest.
 alias cfv="vim ~/Dropbox/Website/dralexnorman/content/post/2018-07-07-a-literate-vimrc.md" # .vimrc
 alias cfa="vim ~/.dotfiles/.aliases" # bash aliases
+alias cfbp="vim ~/.dotfiles/.bash_prompt" # bash prompt config
