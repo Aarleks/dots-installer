@@ -2,7 +2,6 @@ Command,Name in repo or the git url,Explanation of purpose
 ,base-devel,is a package for developers
 ,git,is software for version control
 ,i3-gaps,is a tiling windows manager
-A,yay,is my AUR Helper to install from the AUR
 ,xorg-server,is the graphical server for windows managers
 ,xorg-xdpyinfo,gets screen information for certain instances
 ,xorg-xinit,starts the graphical server
