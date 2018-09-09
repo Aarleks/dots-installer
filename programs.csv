@@ -7,6 +7,7 @@ A,yay,is my AUR Helper to install from the AUR
 ,xorg-xdpyinfo,gets screen information for certain instances
 ,xorg-xinit,starts the graphical server
 G,https://github.com/lukesmithxyz/st.git,is Luke Smith's build of suckless's terminal emulator
+G,https://github.com/lukesmithxyz/dmenu.git,is Luke Smith's build of D-Menu to run commands and launches programs
 ,rofi,is the system's main application launcher
 ,ranger,is a terminal-based file manager
 ,arandr,is a user interface for managing screens
@@ -16,4 +17,56 @@ G,https://github.com/lukesmithxyz/st.git,is Luke Smith's build of suckless's ter
 ,dunst,is a notification system
 ,exfat-utils,enables access of FAT file systems
 ,firefox,for interwebbing
-
+,ttf-inconsolata,is a monospace font
+,ttf-linux-libertine,provides serif and sans-serif fonts
+,feh,is a minimal image viewer
+,ffmpeg,records and splices video and audio in the command line
+,gnome-keyring,serves as the system keyring
+,gnome-themes-extra,provides the dark GTK theme
+,gvim,gives a version of Vim able to copy-paste between programs
+,i3blocks,gives the status bar
+,i3lock,is the lockscreen function
+,mpd,is a music daemon
+,mpc,is the interface for mpd
+,mpv,is a gif/video player
+,ncmpcpp,an interface for music
+,networkmanager,manages networks
+,network-manager-applet,appears in the top-right corner and manages the wifi connection
+,newsboat,is a terminal RSS client
+A,ttf-emojione,gives the system some unicode symbols and emojis
+,ntfs-3g,makes it possible to access NTFS partitions
+,pulseaudio,enables audio
+,pulseaudio-alsa,is an interface with ALSA
+,pamixer,is a terminal audio control interface
+,pulsemixer,is an intuitive ncurses audio controller
+,python-pywal,generates color schemes based on your wallpaper
+A,sc-im,is an Excel-like terminal spreadsheet manager
+A,htop-vim-git,provides system usage information and displays processes
+,scrot,can take quick screenshots at your request
+,tmux,is a terminal multiplexer and the dropdown window in LARBS
+A,unclutter-xfixes-git,hides an inactive mouse
+,unrar,extracts rar's
+,unzip,unzips zips
+A,urlview,parses URLs in the terminal allowing keyboard-based selection
+A,vim-pathogen,manages vim plugins
+,w3m,is a terminal browser which can also view images
+,wget,downloads sites and files on the command line
+,xcape,gives the special escape/super mappings of LARBS
+,xdotool,provides window action utilities on the command line.
+,xssstate,times out the screen if locked
+,youtube-dl,can download any YouTube video (or playlist or channel) when given the link
+,youtube-viewer,is a terminal interface for watching YouTube videos without a browser
+,zathura,is a pdf viewer with vim-like bindings
+,zathura-djvu,gives zathura the ability to read .djvu files
+,zathura-pdf-mupdf,allows mupdf pdf compatibility in zathura
+,poppler,manipulates .pdfs and gives .pdf previews in ranger
+,mediainfo,shows audio and video information and is used by ranger as well
+,atool,manages and gives information about archives
+,fzf,is a fuzzy finder tool
+,highlight,can highlight code output
+G,https://github.com/alexanderjeurissen/ranger_devicons.git,gives folder and file icons in ranger
+A,task-spooler,queues commands or files for download
+,texlive-most,the Tex source
+,texlive-lang,the Tex helper
+,pandoc,is THE tool for writers
+,pandoc-citeproc,for citational awesome
