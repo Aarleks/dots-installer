@@ -2,10 +2,13 @@ Command,Name in repo or the git url,Explanation of purpose
 ,base-devel,is a package for developers
 ,git,is software for version control
 ,i3-gaps,is a tiling windows manager
+,xorg-xrdb,is for making Xresources work
 ,xorg-server,is the graphical server for windows managers
 ,xorg-xdpyinfo,gets screen information for certain instances
 ,xorg-xinit,starts the graphical server
 ,rxvt-unicode,is a heaps good terminal emulator
+,urxvt-perls,is for making URXVT work better
+A,urxvt-resize-font-git,is for making it possible to resize text in URXVT
 G,https://github.com/lukesmithxyz/dmenu.git,is Luke Smith's build of D-Menu to run commands and launches programs
 ,rofi,is the system's main application launcher
 ,ranger,is a terminal-based file manager
