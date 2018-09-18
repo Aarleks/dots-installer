@@ -15,6 +15,8 @@ alias dral="cd ~/Dropbox/Website/dralexnorman/"
 alias mres="cd ~/Dropbox/MRes/mres\ shared\ folder/\#\ UNITS"
 alias dots="cd ~/.dotfiles"
 alias RD1="cd ~/Dropbox/MRes/mres\ shared\ folder/\#\ UNITS/UNITS_2018_2H/RD1"
+alias RD2="cd ~/Dropbox/MRes/mres\ shared\ folder/\#\ UNITS/UNITS_2018_2H/RD2"
+alias RLit="cd ~/Dropbox/MRes/mres\ shared\ folder/\#\ UNITS/UNITS_2018_2H/RLit"
 
 # Shortcuts to programs or functions of interest.
 alias v="vim"
