@@ -11,7 +11,7 @@ First download the two key files:
 * programs.csv
 
 ```sh
-curl -LO https://raw.githubusercontent.com/Aarleks/dots-installer/master/strappyboot.sh https://raw.githubusercontent.com/Aarleks/dots-installer/master/programs.csv
+curl -LO https://raw.githubusercontent.com/Aarleks/dots-installer/master/strappyboot.sh
 bash strappyboot.sh
 ```
 
