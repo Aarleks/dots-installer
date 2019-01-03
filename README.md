@@ -6,15 +6,13 @@ This repo contains an installer script and a list of programs to be installed on
 
 To be run from a clean Arch installation, logged in as `root`. The installer will create a new user and will write over anything with a user of the same name.
 
-First download the two key files:
-* strappyboot.sh
-* programs.csv
+First download the installer script:
 
 ```sh
 curl -LO https://raw.githubusercontent.com/Aarleks/dots-installer/master/strappyboot.sh
+```
+Then, either download `programs.csv` and edit it, or simply run the installer script:
+```sh
 bash strappyboot.sh
 ```
-
-## Files to be Installed
-
-The list of files is generic and should be edited prior to installing on a particular machine.
+The installer will provide a number of prompts along the way, which will need answering, but it's really pretty simple.
