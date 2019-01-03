@@ -8,10 +8,10 @@ To be run from a clean Arch installation, logged in as `root`. The installer wil
 
 First download the two key files:
 * strappyboot.sh
-* files.csv
+* programs.csv
 
 ```sh
-curl -LO 
+curl -LO https://raw.githubusercontent.com/Aarleks/dots-installer/master/strappyboot.sh https://raw.githubusercontent.com/Aarleks/dots-installer/master/programs.csv
 bash strappyboot.sh
 ```
 
